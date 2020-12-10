@@ -336,8 +336,11 @@ h2{
 }
 
 h3{
-    font-size: 28px;
     line-height: 36px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    font-weight: 500;
 }
 
 h4{
@@ -1253,7 +1256,7 @@ ol.ff-roboto-cn li, ul.ff-roboto-cn li{
     float: left;
     background: #ffffff;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .timeline-panel:before{
@@ -1356,7 +1359,6 @@ ol.ff-roboto-cn li, ul.ff-roboto-cn li{
 	font-size: 15px;
 	font-weight: 600;
 	color: #777777;
-	text-transform: capitalize;
 }
 
 .timeline-desc{
@@ -2910,4 +2912,14 @@ ol.children{
 	display: inline-block;
 	cursor: pointer;
 	border-radius: 100px;
+}
+
+.timeline-desc li {
+  list-style-type: initial;
+  line-height: 28px;
+}
+
+.timeline-desc ul {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
