@@ -21,6 +21,27 @@
 		<link id="tile-colorscheme-css" type="text/css" rel="stylesheet" media="all" href="demo/html/tile/css/color-1.css">
 		<link type="text/css" rel="stylesheet" media="all" href="demo/html/tile/css/responsive.css">
 		<script type="text/javascript" src="demo/html/tile/js/modernizr.js"></script>
+		<script>
+			(function (m, a, z, e) {
+			  var s, t;
+			  try {
+			    t = m.sessionStorage.getItem('maze-us');
+			  } catch (err) {}
+			
+			  if (!t) {
+			    t = new Date().getTime();
+			    try {
+			      m.sessionStorage.setItem('maze-us', t);
+			    } catch (err) {}
+			  }
+			
+			  s = a.createElement('script');
+			  s.src = z + '?t=' + t + '&apiKey=' + e;
+			  s.async = true;
+			  a.getElementsByTagName('head')[0].appendChild(s);
+			  m.mazeUniversalSnippetApiKey = e;
+			})(window, document, 'https://snippet.maze.co/maze-universal-loader.js', 'f4950634-f8a8-4580-83ba-12afce1b546a');
+		</script>
 	</head>
 	<body>
 		<!-- Preloader -->
